@@ -1,0 +1,108 @@
+site_name: lkww
+site_description: 立刻旺旺
+site_author: vesaa
+site_url: !ENV SITE_URL
+repo_name: 'vesaaa/lkww'
+repo_url: 'https://github.com/vesaaa/lkww'
+
+# Copyright
+copyright: "Copyright &copy; Vesaa"
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/smartdns.png
+  feature:
+    tabs: true
+  favicon: 'assets/smartdns.png'
+  language: 'zh'
+  include_sidebar: false
+  palette:
+    - scheme: default
+      primary: 'green'
+      accent: 'green'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'dark'
+      accent: 'dark'
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.path
+    - navigation.prune
+    - navigation.instant
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+    - content.code.copy
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  alternate:
+    - name: 中文
+      link: ./
+      lang: zh
+
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - 首页: 'index.md'
+  - 下载: 'download.md'
+  - 安装:
+      - 标准Linux系统 / 树莓派: 'install/linux.md'
+      - OpenWrt: 'install/openwrt.md'
+      - 华硕固件 / 梅林固件: 'install/asus.md'
+      - EntWare: 'install/entware.md'
+      - WSL: 'install/wsl.md'
+      - Docker: 'install/docker.md'
+  - 配置指导:
+      - 基本配置: 'config/basic-config.md'
+      - 服务端配置: 'config/server-config.md'
+      - 缓存设置: 'config/cache.md'
+      - 屏蔽广告: 'config/ad-block.md'
+      - 双栈优选: 'config/dualstack.md'
+      - 禁用IPV6: 'config/block-ipv6.md'
+      - DNS分流: 'config/domain-forwarding.md'
+      - 测速模式: 'config/check-speed-mode.md'
+      - 域名规则: 'config/domain-rule.md'
+      - 客户端规则: 'config/client-rule.md'
+      - 域名地址: 'config/domain-address.md'
+      - cname别名查询: 'config/cname.md'
+      - 域名集合: 'config/domain-set.md'
+      - 规则组: 'config/rule-group.md'
+      - IPSet和NFTSet: 'config/ipset-nftset.md'
+      - 通过代理查询: 'config/proxy.md'
+      - DNS64: 'config/dns64.md'
+      - IP规则: 'config/ip-rule.md'
+      - IP地址集合: 'config/ip-set.md'
+      - IP别名: 'config/ip-alias.md'
+      - 安全相关: 'config/security.md'
+      - 白名单分流请求: 'config/forwarding-with-ipset.md'
+      - EDNS客户端子网: 'config/edns-client-subnet.md'
+      - Bootstrap DNS: 'config/bootstrap-dns.md'
+      - 解析本地主机名: 'config/resolv-dnsmasq-lease.md'
+      - 更多指导: 'config/more.md'
+  - 配置选项: 'configuration.md'
+  - 编译: 'compile.md'
+  - 常见问题: 'faq.md'
+  - 捐赠: 'donate.md'
