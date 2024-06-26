@@ -1,22 +1,12 @@
 site_name: lkww
 site_description: 立刻旺旺
 site_author: vesaa
-site_url: !ENV SITE_URL
-#repo_name: 'vesaaa/lkww'
-#repo_url: 'https://github.com/vesaaa/lkww'
 
-# Copyright1
-copyright: "Copyright &copy; Vesaa"
 
 theme:
   name: material
-  icon:
-    repo: fontawesome/brands/github
-  logo: assets/smartdns.png
   feature:
     tabs: true
-  favicon: 'assets/smartdns.png'
-  language: 'zh'
   include_sidebar: false
   palette:
     - scheme: default
@@ -25,12 +15,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-    - scheme: slate
-      primary: 'dark'
-      accent: 'dark'
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
   features:
     - navigation.path
     - navigation.prune
@@ -47,44 +31,10 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-
 markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - 首页: 'index.md'
-  - 下载: 'download.md'
-  - 安装:
-      - 标准Linux系统 / 树莓派: 'install/linux.md'
-      - OpenWrt: 'install/openwrt.md'
-      - 华硕固件 / 梅林固件: 'install/asus.md'
-      - EntWare: 'install/entware.md'
-      - Docker: 'install/docker.md'
-  - 配置指导:
-      - 基本配置: 'config/basic-config.md'
-      - 服务端配置: 'config/server-config.md'
-      - 缓存设置: 'config/cache.md'
-      - 屏蔽广告: 'config/ad-block.md'
-      - 双栈优选: 'config/dualstack.md'
-      - 禁用IPV6: 'config/block-ipv6.md'
-      - DNS分流: 'config/domain-forwarding.md'
-      - 测速模式: 'config/check-speed-mode.md'
-      - 域名规则: 'config/domain-rule.md'
-      - 规则组: 'config/rule-group.md'
-      - IPSet和NFTSet: 'config/ipset-nftset.md'
-      - 通过代理查询: 'config/proxy.md'
-      - DNS64: 'config/dns64.md'
-      - 更多指导: 'config/more.md'
-  - 配置选项: 'configuration.md'
-  - 编译: 'compile.md'
-  - 常见问题: 'faq.md'
-  - 捐赠: 'donate.md'
