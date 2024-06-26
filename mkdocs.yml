@@ -47,11 +47,6 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  alternate:
-    - name: 中文
-      link: ./
-      lang: zh
 
 markdown_extensions:
   - pymdownx.inlinehilite
