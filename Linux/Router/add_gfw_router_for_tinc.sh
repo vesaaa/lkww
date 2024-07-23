@@ -37,3 +37,10 @@ ip route add 185.199.0.0/16 via $router_ip
 ip route add 185.199.0.0/16 via $router_ip
 #phb
 ip route add 66.254.0.0/16 via $router_ip
+#xvid
+ip route add 185.88.0.0/16 via $router_ip
+#spankban
+ip route add 104.19.0.0/16 via $router_ip
+#91po
+ip route add 104.26.0.0/16 via $router_ip
+ip route add 172.67.0.0/16 via $router_ip
